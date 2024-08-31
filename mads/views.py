@@ -15,8 +15,8 @@ class TestView(View):
         # List of RGB colors
         colors = [
             'rgb(250, 51, 51)',  # Light red
-            'rgb(50, 103, 250)',  # Light blue
-            'rgb(245, 213, 56)',  # Light yellow
+            'rgb(66, 128, 227)',  # Light blue
+            'rgb(196, 191, 81)',  # Light yellow
             'rgb(29, 97, 13)',  # Light green
         ]
         
@@ -66,9 +66,7 @@ class TestView(View):
 
         , """I never knew i can be so happy by just knowing that you love me. Only thinking abt you is making me so happy. Love you tons ❤️"""
 
-        , """Baby I might not be with you now"""
-
-        , """But I promise to give you all my years very soon"""
+        , """Baby I might not be with you now But I promise to give you all my years very soon"""
 
         , """Us being apart is a fact. 
         We must not succumb to the darkness.
