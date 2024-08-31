@@ -1,0 +1,53 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+#container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    min-height: 70vh; /* Adjust the height percentage as needed */
+}
+#countdown {
+    text-align: center;
+}
+#countdown h1 {
+    font-size: 50px;
+    margin: 0;
+}
+#countdown p {
+    font-size: 20px;
+}
+#container2 {
+    background-color: #aac2d8;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.card-img, .card-img-top {
+    padding: 2em;
+}
+
+.curved-img {
+    border-radius: 15%;
+}
+
+.card-body {
+    padding-top:  0;
+}
+
+.card {
+    border-radius: 6%;
+    background-color: rgb(230, 58, 58);
+}
+
+body {
+    background-image: url("../bg-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
