@@ -128,8 +128,8 @@ class TestView(View):
         # Pass the selected color and image to the template context
         context = {
             'bg_color': selected_color,
-            'image_url': selected_image,
-            'selected_message':selected_message
+            'image_url': "images/bg-1.jpg",
+            'selected_message':"selected_message"
         }
 
         return render(request, 'mads/index.html', context)
