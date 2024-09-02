@@ -129,6 +129,7 @@ class TestView(View):
         context = {
             'bg_color': selected_color,
             'image_url': "images/bg-1.jpg",
+            'image_url': "images/bg-1.jpg",
             'selected_message':"selected_message"
         }
 
