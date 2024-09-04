@@ -38,8 +38,6 @@ class TestView(View):
 
         # Select a random color and image
         selected_color = random.choice(colors)
-        
-        random.seed(random.randint(0,1000))
         selected_image = random.choice(images)
         
         messages = [
@@ -125,7 +123,6 @@ class TestView(View):
         , """Every night before sleeping, I think abt you and I try to tell you how much I’m in love with you and I can’t tell enough. Just a message notification from you makes me happy, that’s how much. I hope this message will brighten your day too. ❤️"""
         ]
         
-        random.seed(random.randint(0,1000))
         selected_message = random.choice(messages)
 
         # Pass the selected color and image to the template context
