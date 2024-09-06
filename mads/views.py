@@ -34,7 +34,7 @@ class TestView(View):
         # Use today's date to get a consistent "random" value for the day
         today = date.today()
         # random.seed(today.toordinal())
-        random.seed(random.randint(0,1000))
+        # random.seed(random.randint(0,1000))
 
         # Select a random color and image
         selected_color = random.choice(colors)
