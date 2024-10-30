@@ -121,6 +121,15 @@ class TestView(View):
         , """It’s like, even if I spend a whole day, a whole week, even a month I’ll still want you more and more. And still miss you the moment you leave. 😚"""
 
         , """Every night before sleeping, I think abt you and I try to tell you how much I’m in love with you and I can’t tell enough. Just a message notification from you makes me happy, that’s how much. I hope this message will brighten your day too. ❤️"""
+        
+        ,"""All I want is you to be at peace. It is really nice watching you sleep so peacefully. Ahh its making me so happy idk why 😚"""
+        
+        ,"""I will buy the world for you."""
+        
+        ,"""with 50 more days to go, i want this time to flow by even faster. i cant stop thinking about us being together all the time. i feel so incomplete all day by not being with you. i want this distance to get over as soon as possible so that i can run to the Love of my Life and finally feel complete and happy. i donno what else to say baby. i’ll start crying if i say more. I love you so much baby ❤️❤️❤️"""
+        
+        ,"""I close my eyes, I see you. I open my eyes, I miss you ❤️❤️❤️"""
+        
         ]
         
         selected_message = random.choice(messages)
