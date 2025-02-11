@@ -37,8 +37,8 @@
                 <img src="{% static image_url %}" class="card-img curved-img" alt="{{image_url}}">
                 <div class="card-body">
                     <div id="countdown">
-                        <h2 id="time">Card Title</h2>
-                        <p  class="card-text">To go </p>
+                        <h3 id="time">Card Title</h3>
+                        {% comment %} <p  class="card-text">To go </p> {% endcomment %}
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                 document.getElementById('time').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
                 if (distance < 0) {
-                    document.getElementById('time').innerHTML = "The event has arrived!";
+                    document.getElementById('time').innerHTML = "Love of my Life";
                 }
             }
 
