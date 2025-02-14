@@ -47,7 +47,7 @@
                 <div class="card-body">
                     <div id="countdown">
                         <h3 id="time">Card Title</h3>
-                        {% comment %} <p  class="card-text">To go </p> {% endcomment %}
+                        <p class="ylink" style="display: none">Wanna be my Valentine? </p>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,31 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const targetDate = new Date('Dec 14, 2024 00:00:00').getTime();
+            const targetDate = new Date('Feb 14, 2025 00:00:00').getTime();
+
+            let paragraph = document.querySelector(".ylink");
+
+                // Create an <a> element
+            let link = document.createElement("a");
+            link.href = "https://youtu.be/OxW2YAAmxw0"; // Set the URL
+            link.textContent = "Click here"; // Set the link text
+            link.target = "_blank"; // Open in a new tab (optional)
+
+                // Append the link inside the paragraph
+            
+
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) {
+                document.getElementById('time').innerHTML = "Happy Valentines Day Babyyyyy";
+                paragraph.appendChild(link);
+                paragraph.style.display = "block";
+            }
+            else {
+                document.getElementById('time').innerHTML = "Love of my Life";
+            }
+
 
             function updateCountdown() {
                 const now = new Date().getTime();
@@ -76,9 +100,12 @@
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                document.getElementById('time').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                // document.getElementById('ylink').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
                 if (distance < 0) {
+                    document.getElementById('time').innerHTML = "Happy Valentines Day Babyyyyy";
+                }
+                else {
                     document.getElementById('time').innerHTML = "Love of my Life";
                 }
             }
